@@ -3,11 +3,10 @@ from unittest import result
 from langchain_community.document_loaders import PyPDFLoader
 
 pdf_paths = [
-    "D:/Vs Code Python/python1/AI_chatbot_RAG_LANGCHAIN/knowledge_base/ericsson_whitepaper.pdf",
-    "D:/Vs Code Python/python1/AI_chatbot_RAG_LANGCHAIN/knowledge_base/nokia_whitepaper.pdf",
-    "D:/Vs Code Python/python1/AI_chatbot_RAG_LANGCHAIN/knowledge_base/o_ran_spec.pdf"
+    "knowledge_base/ericsson_whitepaper.pdf",
+    "knowledge_base/nokia_whitepaper.pdf",
+    "knowledge_base/o_ran_spec.pdf"
 ]
-
 documents = []
 
 for pdf_path in pdf_paths:
@@ -69,7 +68,7 @@ from langchain_chroma import Chroma
 vector_store = Chroma(
     collection_name="telecom_documents",
     embedding_function=embeddings,
-    persist_directory="D:/Vs Code Python/python1/AI_chatbot_RAG_LANGCHAIN/data/chroma_db"
+    persist_directory="data/chroma_db"
 )
 
 #vector_store.add_documents(chunks)
