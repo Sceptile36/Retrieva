@@ -113,5 +113,3 @@ Retrieva/
 * Support for additional document formats
 * Retrieval evaluation and relevance metrics
 * Improved citation and source presentation
-
-Then your GitHub repo is going to look **legit**, rather than like a folder of random Python files.
