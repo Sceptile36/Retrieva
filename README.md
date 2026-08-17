@@ -84,7 +84,7 @@ GEMINI_API_KEY=your_api_key_here
 Run the application:
 
 ```bash
-streamlit run app.py
+streamlit run rag_pipeline(front+backend).py
 ```
 
 ## Project Structure
@@ -92,8 +92,8 @@ streamlit run app.py
 ```text
 Retrieva/
 │
-├── app.py
-├── chatbot_main.py
+├── rag_pipeline(front+backend)
+├── retrieval_engine(backend_understanding)
 ├── requirements.txt
 ├── .gitignore
 │
