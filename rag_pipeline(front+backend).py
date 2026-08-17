@@ -62,7 +62,7 @@ embeddings = HuggingFaceEmbeddings(
 vector_store = Chroma(
     collection_name="telecom_documents",
     embedding_function=embeddings,
-    persist_directory="D:/Vs Code Python/python1/AI_chatbot_RAG_LANGCHAIN/data/chroma_db"
+    persist_directory="data/chroma_db"
 )
 
 
